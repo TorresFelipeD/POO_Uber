@@ -10,7 +10,7 @@ require_once("UberPool.php");
 
 
 $car = new Car("TDF344", new Driver("Angel Cruz", "133551","ese@oh.co","sd6c51"));
-$car->passenger = 2;
+$car->setPassenger(2);
 
 echo "<p>";
 echo $car->DataCar();
