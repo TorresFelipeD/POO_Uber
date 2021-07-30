@@ -14,8 +14,9 @@ class Car
     }
 
     public function DataCar(){
-        echo "License: ".$this->license;
-        echo "\nDriver Name: ".$this->driver->name;
-        echo "\nPassenger: ".$this->passenger;
+        $strCar = "License: ".$this->license;
+        $strCar = $strCar."\nDriver Name: ".$this->driver->name;
+        $strCar = $strCar."\nPassenger: ".$this->passenger;
+        return $strCar;
     }
 }
